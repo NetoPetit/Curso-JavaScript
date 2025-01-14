@@ -15,5 +15,17 @@ console.log(umaString.lastIndexOf('m', 4));
 console.log(umaString.match(/[a-z]/g));
 //substituindo trechos de um texto na string, substitui o primeiro atributo pelo segundo:
 console.log(umaString.replace('Um', 'Outro'));
+//substituindo todas as letras r por #:
+console.log(umaString.replace(/t/g, '#'));
 //saber o tamanho da string:
 console.log(umaString.length);
+//pegando pedaços de uma string pelo indíce:
+console.log(umaString.slice(1, 6));
+//dividindo a string passando um caracter e uma quantidade como referência:
+console.log(umaString.split('t', 2));
+//transformndo tudo em maiúscula:
+console.log(umaString.toUpperCase());
+//transformndo tudo em minúscula:
+console.log(umaString.toLowerCase());
+//usando template string:
+console.log(`${umaString} com a variável concatenada usando template string!`)

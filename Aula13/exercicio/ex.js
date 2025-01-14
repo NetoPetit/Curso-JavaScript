@@ -1,0 +1,10 @@
+const nome = prompt('Digite o seu nome completo:');
+document.body.innerHTML += `O seu nome é ${nome}.<br/>`;
+document.body.innerHTML += `O seu nome tem ${nome.length} caracteres.<br/>`;
+document.body.innerHTML += `A terceira letra do seu nome é ${nome[2]}.<br/>`;
+document.body.innerHTML += `O primeiro índice da letra 'e' no seu nome é ${nome.indexOf('e')}.<br/>`;
+document.body.innerHTML += `O último índice da letra 'e' no seu nome é ${nome.lastIndexOf('e')}.<br/>`;
+document.body.innerHTML += `As últimas três letras do seu nome é ${nome.slice(-3, nome.length)}.<br/>`;
+document.body.innerHTML += `As palavras do seu nome são ${nome.split(' ')}.<br/>`;
+document.body.innerHTML += `O seu nome com letras maiúsculas: ${nome.toUpperCase()}.<br/>`;
+document.body.innerHTML += `O seu nome com letras minúsculas: ${nome.toLowerCase()}.<br/>`;
