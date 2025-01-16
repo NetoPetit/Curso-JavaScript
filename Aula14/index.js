@@ -16,6 +16,12 @@ num1 += num2; //1.8
 num1 += num2; //1.9
 num1 += num2; //2.0
 
+/*
+//Outra resolução:
+num1 = ((num1 * 100) + (num2 * 100)) / 100; //0.8
+num1 = ((num1 * 100) + (num2 * 100)) / 100;// 0.9
+num1 = ((num1 * 100) + (num2 * 100)) / 100;// 1.0
+*/
 num1 = Number(num1.toFixed(2));
 console.log(num1);
 console.log(Number.isInteger(num1));
