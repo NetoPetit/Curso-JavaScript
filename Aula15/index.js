@@ -14,3 +14,5 @@ console.log(aleatorioRedondo);// gera um número aleatório redondo entre cinco 
 console.log(Math.pow(2, 10)); //dois elevado a dez
 console.log(2 ** 10); //dois elevado a dez
 console.log(num1 ** 0.5); //raiz quadrada
+console.log(Math.sqrt(num1)); //raiz quadrada
+console.log$(num1.toFixed(2)); //número com duas casas decimais depois da vírgula
