@@ -61,3 +61,18 @@ form button:hover {
 form button:active {
     background: purple ;
 }
+
+.info {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+div p {
+    height: 20px;
+}
+
+.imprimeResultado {
+    margin-top: 5px;;
+    height: 50px;
+    background: green;
+}
