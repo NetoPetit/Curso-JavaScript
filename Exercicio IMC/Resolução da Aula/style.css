@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 660px;
+    max-width: 640px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
@@ -62,17 +62,12 @@ form button:active {
     background: purple ;
 }
 
-.info {
-    display: inline-block;
-    margin-right: 100px;
+.paragrafo-resultado {
+    background: #8cfdc5;
+    padding: 10px 20px;
 }
 
-div p {
-    height: 20px;
-}
-
-.imprimeResultado {
-    margin-top: 20px;
-    height: 50px;
-    background: #fff;
+.paragrafo-resultado-invalido {
+    background: salmon;
+    padding: 10px 20px;
 }
