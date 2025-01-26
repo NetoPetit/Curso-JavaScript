@@ -1,12 +1,21 @@
 const form = document.querySelector('.form');
 const data = new Date();
 const diaSemana = data.getDay();
-const mesAno = data.getFullYear();
-console.log(diaSemana);
-const texto = form.querySelector('.data');
+const mesAno = data.getMonth();
+const numeroDia = data.getDate();
+const ano = data.getFullYear();
+const hora = adicionaZero(data.getHours());
+const minuto = adicionaZero(data.getMinutes());
 const dia = retornaDiaTexto(diaSemana);
+const mes = retornaMesTexto(mesAno);
+const texto = form.querySelector('.data');
 
-texto.innerHTML = `${diaSemana}...${dia}`;
+texto.innerHTML = `${dia}, ${numeroDia} de ${mes} de ${ano} ${hora}:${minuto}`;
+
+function adicionaZero(num) {
+    const zero = num >= 10 ? num : `0${num}`;
+    return zero;
+}
 
 function retornaDiaTexto(dia) {
     let diaSemanaTexto;
@@ -16,19 +25,19 @@ function retornaDiaTexto(dia) {
             diaSemanaTexto = 'Domingo';
             return diaSemanaTexto;
         case 1:
-            diaSemanaTexto = 'Segunda';
+            diaSemanaTexto = 'Segunda-feira';
             return diaSemanaTexto;
         case 2:
-            diaSemanaTexto = 'Terça';
+            diaSemanaTexto = 'Terça-feira';
             return diaSemanaTexto;
         case 3:
-            diaSemanaTexto = 'Quarta';
+            diaSemanaTexto = 'Quarta-feira';
             return diaSemanaTexto;
         case 4:
-            diaSemanaTexto = 'Quinta';
+            diaSemanaTexto = 'Quinta-feira';
             return diaSemanaTexto;
         case 5:
-            diaSemanaTexto = 'Sexta';
+            diaSemanaTexto = 'Sexta-feira';
             return diaSemanaTexto;
         case 6:
             diaSemanaTexto = 'Sábado';
